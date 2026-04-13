@@ -6,7 +6,7 @@
 Examining the relationship between different categories of trade and carbon dioxide (CO2) emissions in developing countries. The goal is to analyze if total trade, commodity trade and services trade have a similar or different impact on the environment. 
 
 ## Outline
-Investigating the impacts of each type of trade (total, commodity & service trade) on the environment in developing countries using a panel data on 147 developing countries from 1960 to 2020 (World Bank). 
+Investigating the impacts of each type of trade (total, commodity & service trade) on the environment in developing countries using panel data on 147 developing countries from 1960 to 2020 (World Bank). 
 
 ## Materials and Methods
 ### Data 
