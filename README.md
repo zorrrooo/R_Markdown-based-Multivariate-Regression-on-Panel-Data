@@ -3,7 +3,7 @@
 
 
 ## Project Objective
-Examining the relationship between different categories of trade and carbon dioxide (CO2) emissions in both developing countries. The goal is to analyze if total trade, commodity trade and services trade have a similar or different impact on the environment. 
+Examining the relationship between different categories of trade and carbon dioxide (CO2) emissions in developing countries. The goal is to analyze if total trade, commodity trade and services trade have a similar or different impact on the environment. 
 
 ## Outline
 Investigating the impacts of each type of trade (Total, commodity & service trade) on the environment in developing countries using a panel data on 147 developing countries from 1960 to 2020 (World Bank). 
