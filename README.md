@@ -25,9 +25,9 @@ Fixed Effect model have been considered based on the Hausman test.
 It can be inferred that commodities release a higher share of carbon dioxide emissions in contrast to trade in services. Commodity trade involves tangible goods such as manufacturing, agriculture, mines and minerals, stones and precious elements, etc., which emit several harmful gasses as byproducts during their production processes. On the other hand, service trade is trade in services such as human resources and skills in information technology, engineering, etc., showing no statistically significant effect on the environment.
 
 ## Tools/ Libraries/ Packages
-# Excel
-# R
-# PLM package in R
+## Excel
+## R
+## PLM package in R
 
 
 ![R](https://img.shields.io/badge/Language-R-blue)
