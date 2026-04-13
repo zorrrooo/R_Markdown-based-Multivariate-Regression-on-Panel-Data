@@ -12,7 +12,7 @@ Investigating the impacts of each type of trade (total, commodity & service trad
 ### Data 
 A panel data has been used for major macroeconomic indicators (trade, GDP, FDI, Capital, labor force participation rate) and carbon dioxide emissions from the World Development Indicators database available online. 
 ### Model
-Three econometric models have been built to compute the total, commodity and service trade. 
+Three econometric models have been built to compute the total_trade.Rmd, commodity_trade.Rmd and service_trade.Rmd. 
 ### Estimation Technique
 Fixed and Random Effects method. 
 ### Variables
