@@ -1,0 +1,128 @@
+---
+title: "Fixed & Random Effects Models for Service Trade"
+author: "Saeed, Mohammad Zohaib"
+output:
+  pdf_document: default
+  word_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+warning = FALSE
+message = FALSE
+eval = TRUE
+```
+
+
+```{r}
+chooseCRANmirror(graphics = FALSE, ind = 1)
+install.packages("marsl")
+```
+
+```{r}
+library(wooldridge)
+library(stargazer)
+library(lmtest)
+library(plm)
+```
+
+
+```{r}
+install.packages("plyr", repos = "http://cran.us.r-project.org")
+```
+
+
+```{r}
+library(readxl)
+square <- read_excel("C:/Users/zohai/OneDrive/Desktop/square.xlsx", 
+    sheet = "this")
+View(square)
+```
+
+
+
+```{r}
+library(equatiomatic)
+library(zoo)
+```
+
+
+
+```{r}
+library(plm)
+pdata.frame(square, index = c("Year", "Country"))
+pdim(square)
+```
+
+
+##Fixed Effects Method: Running the model using fixed effects method and plm function
+
+```{r}
+library(plm)
+library(equatiomatic)
+ind1 <- plm(LCO2 ~ STr + GDP + + GDPS + FDI + LCapital + Labor, model = "within", data = square)
+library(stargazer)
+stargazer(ind1, type = "text", single.row = TRUE, column.labels = c("within"), model.names = FALSE)
+```
+
+
+
+
+
+
+
+#Random Effects Model: using Random Effects Model and plm function
+
+
+```{r}
+ind2 <- plm(LCO2 ~ STr + GDP + GDPS + FDI + LCapital + Labor, model = "random", data = square)
+stargazer(ind2, type = "text", single.row = TRUE, column.labels = c("Random"), model.names = FALSE)
+```
+
+
+#Hausman Test
+
+phtest(ind1,ind2)
+
+data:  LCO2 ~ STr + GDP + +GDPS + FDI + LCapital + Labor
+chisq = 752.36, df = 6, p-value < 2.2e-16
+alternative hypothesis: one model is inconsistent
+
+#Conclusion
+
+We will use fixed effects model for service trade as well given the Hausman Test result. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
